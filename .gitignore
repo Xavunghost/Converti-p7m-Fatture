@@ -1,0 +1,4 @@
+input/*
+output/*
+!input/input istruzioni.txt
+!output/output istruzioni.txt

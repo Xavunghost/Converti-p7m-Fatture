@@ -1,0 +1,8 @@
+CARTELLA OUTPUT
+===============
+
+In questa cartella troverai gli XML estratti dalle fatture,
+generati automaticamente dallo script estrai-p7m.ps1.
+
+Non serve copiare nulla qui a mano: i file vengono creati dallo script
+a partire da quelli presenti nella cartella input.

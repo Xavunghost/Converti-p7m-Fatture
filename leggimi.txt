@@ -1,0 +1,30 @@
+CONVERTI P7M FATTURE
+====================
+
+Programmi necessari per far partire lo script
+----------------------------------------------
+- Windows con PowerShell (già incluso in Windows)
+- OpenSSL per Windows, installato in: C:\Program Files\OpenSSL-Win64\bin\openssl.exe
+  Download: https://slproweb.com/products/Win32OpenSSL.html
+  (scegliere la versione "Win64", es. "Win64 OpenSSL v3.x")
+  Se viene installato in un percorso diverso, modificare la prima riga di estrai-p7m.ps1
+
+Cosa fa lo script
+-----------------
+Lo script estrai-p7m.ps1 estrae l'XML dalle fatture elettroniche firmate
+(file .xml.p7m) usando OpenSSL. Legge i file dalla cartella "input" e
+salva gli XML estratti nella cartella "output".
+
+Come eseguirlo
+---------------
+1. Copia i file .xml.p7m da convertire dentro la cartella "input"
+2. Apri PowerShell in questa cartella (tasto destro > "Apri in Terminale")
+3. Esegui:
+
+   .\estrai-p7m.ps1
+
+4. Se PowerShell blocca lo script, esegui prima (una sola volta):
+
+   Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+5. Gli XML estratti compariranno nella cartella "output"

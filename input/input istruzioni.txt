@@ -1,0 +1,8 @@
+CARTELLA INPUT
+==============
+
+Metti in questa cartella i file delle fatture elettroniche firmate,
+con estensione .xml.p7m, che vuoi convertire.
+
+Dopo aver copiato i file qui, esegui lo script estrai-p7m.ps1
+(vedi leggimi.txt nella cartella principale).
